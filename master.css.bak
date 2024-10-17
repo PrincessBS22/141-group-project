@@ -9,6 +9,7 @@ body{
 
 #header{
 	padding:1em;
+	margin-top:1em;
 	border-bottom:.5em double #2D2D33;
 	width:90em;
 	height:4em;
