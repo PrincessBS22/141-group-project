@@ -5,18 +5,18 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 		<title>New to Purdue Main</title>
-		<style type="text/css" media="all">@import "css/master.css";</style>
+		<link href="home.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<div id="container">
 			<div id="header">
-				
+				<p>h</p>
 			</div>
-			<div id="sidebar">
-			
+			<div id="linky">
+				<p>l</p>
 			</div>
 			<div id="content">
-			<p>HALLO CAN YOU SEE THIS</p>
+			<p>rar</p>
 			</div>
 		</div>
 	</body>
