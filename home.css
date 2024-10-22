@@ -4,14 +4,15 @@ body{
 
 #container{
 	padding:1em;
-	width:92em;
-	height:150em;}
+	padding-top:0px;
+	width:92em;}
 
 #header{
 	padding:1em;
+	padding-top:.25em;
 	border-bottom:.5em double #2D2D33;
 	width:90em;
-	height:4em;
+	height:2em;
 	background-color:#F7EDD2}
 
 #linky{
@@ -23,7 +24,7 @@ body{
 
 #content{
 	padding:1em;
-	margin-bottom:0em;
+	margin-bottom:1em;
 	width:90em;
 	height:30em;
 	background-color:#F7EDD2}
