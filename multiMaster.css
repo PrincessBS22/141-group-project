@@ -1,0 +1,55 @@
+body{
+	background-color:#F0D06D;
+}
+
+#container{
+	padding:1em;
+	width:92em;
+	height:150em;
+}
+
+#header{
+	padding:1em;
+	border-bottom:.5em double #2D2D33;
+	width:90em;
+	height:4em;
+	background-color:#F7EDD2}
+
+#linkHeader, #purduePrepHeader{
+	font-size: 2.5em;
+	float: center;
+}
+#content{
+	padding: 1em;
+	margin-left:0em;
+	margin-top: 1em;
+	margin-bottom:0em;
+	margin-right:0em;
+	float:right;
+	width:72em;
+	/*height:40em;*/
+	background-color:#F7EDD2;
+	height: 40em; /* or any value */ overflow-y: scroll;
+}
+
+#sidebar{
+	padding:1em;
+	margin:1em;
+	margin-bottom:0em;
+	margin-left:0em;
+	float:left;
+	width:14em;
+	height:30em;
+	background-color:#F7EDD2;
+	border: .5em double black;
+}
+
+
+	#linky{
+		padding:1em;
+		margin-bottom:1em;
+		width:90em;
+		height:3em;
+		background-color:#F7EDD2;
+		
+	}
