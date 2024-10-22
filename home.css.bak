@@ -1,0 +1,31 @@
+body{
+	background-color:#F0D06D;
+}
+
+#container{
+	padding:1em;
+	width:92em;
+	height:150em;}
+
+#header{
+	padding:1em;
+	border-bottom:.5em double #2D2D33;
+	width:90em;
+	height:4em;
+	background-color:#F7EDD2}
+
+#linky{
+	padding:1em;
+	margin-bottom:1em;
+	width:90em;
+	height:3em;
+	background-color:#F7EDD2}
+
+#content{
+	padding:1em;
+	margin:1em;
+	margin-bottom:0em;
+	margin-right:0em;
+	width:90em;
+	height:30em;
+	background-color:#F7EDD2}
