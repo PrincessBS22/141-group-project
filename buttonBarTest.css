@@ -1,0 +1,28 @@
+
+:root {
+    --colorTest: #c2ac4e;
+}
+
+#buttonBar{
+    width: 100%;
+    height: 5%;
+    background-color: greenyellow;
+}
+
+.btn-group{
+    width:60%;
+    height: 100%;
+    float: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: purple;
+}
+
+.dropdown{
+    height:100%;
+    margin: auto;
+
+}
+
+button{
+    height:100%;
+}
