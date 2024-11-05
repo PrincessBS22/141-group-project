@@ -1,4 +1,4 @@
-
+/*
 :root {
     --colorTest: #c2ac4e;
 }
@@ -25,4 +25,10 @@
 
 button{
     height:100%;
+}
+*/
+
+#navbarContainer{
+    float:right;
+    color: purple
 }
