@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="importantOne.css" rel="stylesheet" type="text/css" />
+</head>
+<!--CSS Styling-->
+<style>
+    /* Sidebar styling */
+    #sidebar {
+      width: 250px;
+      padding-top: 60px;
+      background-color: #343a40;
+      color: white;
+      transition: all 0.3s ease;
+      height: auto;
+    }
+    #sidebar.collapsed {
+      width: 0;
+      padding-top: 60px;
+      overflow: hidden;
+    }
+    #sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+    #sidebarList {
+      /*position: fixed;*/
+    }
+    #sidebarHeading {
+      /*position:fixed;*/
+    }
+    #topContainer1 {}
+    #toggleSidebarBtn {
+      width: 100%;
+      letter-spacing: 0.2em;
+    }
+
+    /* Main content styling */
+    #content {
+      margin-left: 30px;
+      transition: margin-left 0.3s ease;
+      height: auto;
+    }
+    #content.expanded {
+      margin-left: 0;
+    }
+    #navigationBar {
+        background-color: black;
+    }
+    #homeButton {
+        background-color: #FFCF40;
+    }
+    #home2Button {
+        background-color: #F8D057;
+    }
+    #purduePrepButton {
+        background-color: #F0D06D;
+        transition: background-color 0.3s ease;
+    }
+    #moveInButton {
+        background-color: #CAB264;
+        transition: background-color 0.3s ease;
+    }
+    #firstWeekButton {
+        background-color: #A5945B;
+        transition: background-color 0.3s ease;
+    }
+    #settlingInButton {
+        background-color: #7F7652;
+        transition: background-color 0.3s ease;
+    }
+    #resourcesButton {
+        background-color: #5A5849;
+        transition: background-color 0.3s ease;
+    }
+    #tipsButton {
+        background-color: #343a40;
+        transition: background-color 0.3s ease;
+    }
+    #purduePrepButton:hover,
+    #moveInButton:hover,
+    #firstWeekButton:hover,
+    #settlingInButton:hover,
+    #resourcesButton:hover,
+    #tipsButton:hover,
+    #home2button:hover {
+        background-color: #212121;
+        color: #FFCF40;
+    }
+    #bottomContainer {
+      background-color: lightgrey;
+      height: auto;
+    }
+    #containerUnderButtons {
+        background-color: #7F7652;
+    }
+    #purduePrepHeading {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 0.5em;
+    }
+</style>
+<title>Button Bar Test</title>
+<!--HTML-->
+<body>
+    <div id="topContainer1" class="container-fluid m-0 p-0">
+        <nav id="navigationBar" class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-2 border-dark shadow-sm m-0 p-0">
+            <a id="homeButton" class="navbar-brand pb-2 m-0 pb-1 pt-0 px-5 border-end border-light fw-bold text-decoration-underline" href="#">NewToPurdue.com</a>
+            <!-- Navbar toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-dark m-0 pb-1 pt-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto m-0">
+                    <a id="purduePrepButton" class="nav-item nav-link active border-start border-lightfont-monospace px-5" href="#">Purdue Prep <!--<span class="sr-only">(current)</span>--></a>
+                    <a id="moveInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Move In</a>
+                    <a id="firstWeekButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">1st Week</a>
+                    <a id="settlingInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Settling In</a>
+                    <a id="resourcesButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Resources</a>
+                    <a id="tipsButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Tips</a>
+                </div>
+            </div>
+        </nav>
+        <div id="containerUnderButtons" class="container-fluid m-0 px-3 pb-2 pt-3 fw-bolder shadow text-center">
+            <p id="purduePrepHeading" class="h2 text-dark text-center">Settling In</p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-black sticky-top">
+        <div class="container-l mx-2 px-1 p-2 bg-transparent mt-0 border-top border-dark">
+            <button id="toggleSidebarBtn" type="button" class="btn bg-dark rounded-1 text-warning border-5 border-warning sticky px-5 mt-0">
+                Toggle Sidebar
+            </button>
+        </div>
+    </div>
+
+    <div id="bottomContainer" class="container-fluid m-0 pt-0 p-0 bg-black shadow-sm border-top border-warning">
+        <!-- Sidebar -->
+        <div id="innerBottomContainer1" class="container-l mt-0 mx-0 my-2 mb-0 bg-light-10 text-light">
+            <div class="d-flex">
+                <div id="sidebar" class="collapse collapsed show m-0 bg-black">
+                    <h5 id="sidebarHeading" class="px-3 pt-0 text-warning">Sidebar</h5>
+                    <ul id="sidebarList" class="list-unstyled pt-5">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li><a href="#">Link4</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Page Content -->
+                <div id="content" class="flex-grow-1 bg-dark px-5 p-3">
+                    <h2>Settle In at Purdue</h2>
+                    <p>You've finally moved in and attended your first week of classes. Here are some ways to make Purdue feel like home.</p>
+                    <a href id="winterImage1"><img src="winterImage1.jpg" class="img-fluid rounded mx-auto d-block float-right"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap components link-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Javascript
+        document.getElementById('toggleSidebarBtn').addEventListener('click', function () {
+          const sidebar = document.getElementById('sidebar');
+          const content = document.getElementById('content');
+          sidebar.classList.toggle('collapsed');
+          content.classList.toggle('expanded');
+        });
+    </script>
+</body>
+</html>
