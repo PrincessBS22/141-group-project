@@ -8,104 +8,6 @@
     <link href="/css/importantOne.css" rel="stylesheet" type="text/css" />
     <link href="/css/master.css" rel="stylesheet" type="text/css" />
 </head>
-<!--CSS Styling-->
-<style>
-    /* Sidebar styling */
-    #sidebar {
-      width: 250px;
-      padding-top: 60px;
-      background-color: #343a40;
-      color: white;
-      transition: all 0.3s ease;
-      height: auto;
-    }
-    #sidebar.collapsed {
-      width: 0;
-      padding-top: 60px;
-      overflow: hidden;
-    }
-    #sidebar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      display: block;
-    }
-    #sidebarList {
-      /*position: fixed;*/
-    }
-    #sidebarHeading {
-      /*position:fixed;*/
-    }
-    #topContainer1 {}
-    #toggleSidebarBtn {
-      width: 100%;
-      letter-spacing: 0.2em;
-    }
-
-    /* Main content styling */
-    #content {
-      margin-left: 30px;
-      transition: margin-left 0.3s ease;
-      height: auto;
-    }
-    #content.expanded {
-      margin-left: 0;
-    }
-    #navigationBar {
-        background-color: black;
-    }
-    #homeButton {
-        background-color: #FFCF40;
-    }
-    #home2Button {
-        background-color: #F8D057;
-    }
-    #purduePrepButton {
-        background-color: #F0D06D;
-        transition: background-color 0.3s ease;
-    }
-    #moveInButton {
-        background-color: #CAB264;
-        transition: background-color 0.3s ease;
-    }
-    #firstWeekButton {
-        background-color: #A5945B;
-        transition: background-color 0.3s ease;
-    }
-    #settlingInButton {
-        background-color: #7F7652;
-        transition: background-color 0.3s ease;
-    }
-    #resourcesButton {
-        background-color: #5A5849;
-        transition: background-color 0.3s ease;
-    }
-    #tipsButton {
-        background-color: #343a40;
-        transition: background-color 0.3s ease;
-    }
-    #purduePrepButton:hover,
-    #moveInButton:hover,
-    #firstWeekButton:hover,
-    #settlingInButton:hover,
-    #resourcesButton:hover,
-    #tipsButton:hover,
-    #home2button:hover {
-        background-color: #212121;
-        color: #FFCF40;
-    }
-    #bottomContainer {
-      background-color: lightgrey;
-      height: auto;
-    }
-    #containerUnderButtons {
-        background-color: #7F7652;
-    }
-    #purduePrepHeading {
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      letter-spacing: 0.5em;
-    }
-</style>
 <title>Button Bar Test</title>
 <!--HTML-->
 <body>
@@ -118,10 +20,10 @@
             </button>
             <div class="collapse navbar-collapse bg-dark m-0 pb-1 pt-0" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto m-0">
-                    <a id="purduePrepButton" class="nav-item nav-link active border-start border-lightfont-monospace px-5" href="#">Purdue Prep <!--<span class="sr-only">(current)</span>--></a>
-                    <a id="moveInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Move In</a>
-                    <a id="firstWeekButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">1st Week</a>
-                    <a id="settlingInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Settling In</a>
+                    <a id="PurduePrepon" class="nav-item nav-link active border-start border-lightfont-monospace px-5" href="/PurduePrep.html">Purdue Prep <!--<span class="sr-only">(current)</span>--></a>
+                    <a id="moveInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="/MoveIn.html">Move In</a>
+                    <a id="firstWeekButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="/FirstWeek.html">1st Week</a>
+                    <a id="settlingInButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="/SettlingIn.html">Settling In</a>
                     <a id="resourcesButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Resources</a>
                     <a id="tipsButton" class="nav-item nav-link border-start border-light font-monospace px-5" href="#">Tips</a>
                 </div>
