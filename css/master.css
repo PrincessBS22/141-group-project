@@ -1,42 +1,146 @@
-body{
-	background-color:#F0D06D;
+/* General styling */
+body {
+    background-color: #F0D06D;
 }
 
-#container{
-	padding:1em;
-	width:92em;
-	height:150em;}
+/* Navigation Bar Styling */
+#navigationBar {
+    background-color: #FFCF40;
+}
 
-#header{
-	padding:1em;
-	border-bottom:.5em double #2D2D33;
-	width:90em;
-	height:4em;
-	background-color:#F7EDD2}
+#homeButton {
+    background-color: #FFCF40;
+}
 
-#linky{
-	padding:1em;
-	margin-bottom:1em;
-	width:90em;
-	height:3em;
-	background-color:#F7EDD2}
+/* Button Styling */
+#home2Button {
+    background-color: #F8D057;
+}
 
-#content{
-	padding:1em;
-	margin:1em;
-	margin-bottom:0em;
-	margin-right:0em;
-	float:right;
-	width:72em;
-	height:40em;
-	background-color:#F7EDD2}
+#purduePrepButton {
+    background-color: #F0D06D;
+    transition: background-color 0.3s ease;
+}
 
-#sidebar{
-	padding:1em;
-	margin:1em;
-	margin-bottom:0em;
-	margin-left:0em;
-	float:left;
-	width:14em;
-	height:30em;
-	background-color:#F7EDD2;}
+#moveInButton {
+    background-color: #CAB264;
+    transition: background-color 0.3s ease;
+}
+
+#firstWeekButton {
+    background-color: #A5945B;
+    transition: background-color 0.3s ease;
+}
+
+#settlingInButton {
+    background-color: #7F7652;
+    transition: background-color 0.3s ease;
+}
+
+#resourcesButton {
+    background-color: #5A5849;
+    transition: background-color 0.3s ease;
+}
+
+#tipsButton {
+    background-color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+#purduePrepButton:hover,
+#moveInButton:hover,
+#firstWeekButton:hover,
+#settlingInButton:hover,
+#resourcesButton:hover,
+#tipsButton:hover,
+#home2button:hover {
+    background-color: #212121;
+    color: #FFCF40;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 250px;
+    padding-top: 60px;
+    background-color: #343a40;
+    color: white;
+    transition: all 0.3s ease;
+    height: auto;
+}
+
+#sidebar.collapsed {
+    width: 0;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+#sidebarHeading {
+    /* Additional styling if needed */
+}
+
+#toggleSidebarBtn {
+    width: 100%;
+    letter-spacing: 0.2em;
+}
+
+/* Content Styling */
+#content {
+    margin-left: 30px;
+    transition: margin-left 0.3s ease;
+    height: auto;
+}
+
+#content.expanded {
+    margin-left: 0;
+}
+
+/* Other Elements */
+#bottomContainer {
+    background-color: lightgrey;
+    height: auto;
+}
+
+#containerUnderButtons {
+    background-color: #F0D06D;
+}
+
+#purduePrepHeading,
+#moveInHeading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5em;
+}
+
+/* Additional styles from multiMaster.css */
+#container {
+    padding: 1em;
+    width: 92em;
+    height: 150em;
+}
+
+#header {
+    padding: 1em;
+    border-bottom: .5em double #2D2D33;
+    width: 90em;
+    height: 4em;
+    background-color: #F7EDD2;
+}
+
+#linkHeader,
+#purduePrepHeader {
+    font-size: 2.5em;
+}
+
+#linky,
+#sidebar,
+#content {
+    background-color: #F7EDD2;
+}
+
+/* ...other consolidated styles... */
