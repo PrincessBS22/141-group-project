@@ -17,7 +17,7 @@ body {
     background-color: #F8D057;
 }
 
-#purduePrepButton {
+#purduePrepon {
     background-color: #F0D06D;
     transition: background-color 0.3s ease;
 }
@@ -47,13 +47,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#purduePrepButton:hover,
+#purduePrepon:hover,
 #moveInButton:hover,
 #firstWeekButton:hover,
 #settlingInButton:hover,
 #resourcesButton:hover,
 #tipsButton:hover,
-#home2button:hover {
+#homeButton:hover {
     background-color: #212121;
     color: #FFCF40;
 }
