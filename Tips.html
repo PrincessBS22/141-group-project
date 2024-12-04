@@ -60,17 +60,6 @@
   </div>
 
   <div id="bottomContainer" class="container-fluid m-0 pt-0 p-0 bg-black shadow-sm border-top border-warning">
-    <!-- Sidebar -->
-    <div id="innerBottomContainer1" class="container-l mt-0 mx-0 my-2 mb-0 bg-light-10 text-light">
-      <div class="d-flex">
-        <div id="sidebar" class="collapse collapsed show m-0 bg-black">
-          <h5 id="sidebarHeading" class="px-3 pt-0 text-warning">Settling In</h5>
-          <ul id="sidebarList" class="list-unstyled pt-5">
-            <li><a href="#PMOContainer">Purdue Musical Organizations</a></li>
-            <li><a href="#GetInvolvedContainer">Get Involved</a></li>
-            <li><a href="#ExploreContainer">Explore West Lafayette</a></li>
-          </ul>
-        </div>
 
         <!-- Page Content -->
         <div id="content" class="flex-grow-1 bg-dark px-5 p-3">
@@ -78,6 +67,44 @@
           <p></p>
           <a href id="winterImage1"><img src="/img/winterImage1.jpg"
               class="img-fluid rounded mx-auto d-block float-right">
+              <div class="container my-5">
+                <h2>Submit a Tip</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="grade">Grade</label>
+                    <select class="form-control" id="grade" name="grade">
+                      <option>Freshmen</option>
+                      <option>Sophomore</option>
+                      <option>Junior</option>
+                      <option>Senior</option>
+                      <option>Grad Student</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" name="department" placeholder="Enter department">
+                  </div>
+                  <div class="form-group">
+                    <label for="location">Location</label>
+                    <select class="form-control" id="location" name="location">
+                      <option>West Lafayette</option>
+                      <option>Indianapolis</option>
+                      <option>Fort Wayne</option>
+                      <option>Global</option>
+                      <option>Northwest</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                  </div>
+                  <div class="form-group">
+                    <label for="recommendation">Recommendation</label>
+                    <textarea class="form-control" id="recommendation" name="recommendation" rows="3" placeholder="Enter recommendation"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
         </div>      
    <!--Footer-->
    <footer id = "footerClass" class="text-body-secondary py-3">
