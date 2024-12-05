@@ -62,84 +62,87 @@
     </div>
 
     <div id="bottomContainer" class="container-fluid m-0 pt-0 p-0 bg-black shadow-sm border-top border-warning">
+        <div id="innerBottomContainer1" class="container-l mt-0 mx-0 my-2 mb-0 bg-light-10 text-light">
+            <div class="d-flex">
+                <!-- Page Content -->
+                <div id="content" class="flex-grow-1 bg-dark px-5 p-3">
+                    <h1>Tips</h1>
+                    <p>Tips and trick from students already at Purdue.</p>
+                    <img src="/img/winterImage1.jpg" class="img-fluid rounded mx-auto d-block float-right" />
+                    <div class="container my-5">
 
-        <!-- Page Content -->
-        <div id="content" class="flex-grow-1 bg-dark px-5 p-3">
-            <h1>Tips</h1>
-                <p>Tips and trick from students already at Purdue.</p>
-            <img src="/img/winterImage1.jpg" class="img-fluid rounded mx-auto d-block float-right"/>
-            <div class="container my-5">
-                
-                <!--tips-->
-                <h2 class="text-warning mb-3">title</h2>
-                    <div class="container my-1">
-                        <h3>grade, dept, location </h3>
-                        <p>tip</p>
+                        <!--tips-->
+                        <h2 class="text-warning mb-3">title</h2>
+                        <div class="container my-1">
+                            <h3>grade, dept, location </h3>
+                            <p>tip</p>
+                        </div>
                     </div>
+
+                    <!--submit tips-->
+                    <h2 class="text-warning">Submit a Tip</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="grade">Grade</label>
+                            <select class="form-control" id="grade" name="grade">
+                                <option>Freshmen</option>
+                                <option>Sophomore</option>
+                                <option>Junior</option>
+                                <option>Senior</option>
+                                <option>Grad Student</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <input type="text" class="form-control" id="department" name="department"
+                                placeholder="Enter department">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select class="form-control" id="location" name="location">
+                                <option>West Lafayette</option>
+                                <option>Indianapolis</option>
+                                <option>Fort Wayne</option>
+                                <option>Global</option>
+                                <option>Northwest</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                        </div>
+                        <div class="form-group">
+                            <label for="recommendation">Recommendation</label>
+                            <textarea class="form-control" id="recommendation" name="recommendation" rows="3"
+                                placeholder="Enter recommendation"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
-
-                <!--submit tips-->
-                <h2 class="text-warning">Submit a Tip</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="grade">Grade</label>
-                        <select class="form-control" id="grade" name="grade">
-                            <option>Freshmen</option>
-                            <option>Sophomore</option>
-                            <option>Junior</option>
-                            <option>Senior</option>
-                            <option>Grad Student</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="department">Department</label>
-                        <input type="text" class="form-control" id="department" name="department"
-                            placeholder="Enter department">
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Location</label>
-                        <select class="form-control" id="location" name="location">
-                            <option>West Lafayette</option>
-                            <option>Indianapolis</option>
-                            <option>Fort Wayne</option>
-                            <option>Global</option>
-                            <option>Northwest</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
-                    </div>
-                    <div class="form-group">
-                        <label for="recommendation">Recommendation</label>
-                        <textarea class="form-control" id="recommendation" name="recommendation" rows="3"
-                            placeholder="Enter recommendation"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
             </div>
         </div>
-        <!--Footer-->
-        <footer id="footerClass" class="text-body-secondary py-3">
-            <div class="container">
-                <p class="float-end mb-1">
-                    <a href="#">Back to top</a>
-                </p>
-                <p class="mb-1">Not affliliated with Purdue University.</p>
-            </div>
-        </footer>
-        <!--Bootstrap components link-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            //Javascript
-            document.getElementById('toggleSidebarBtn').addEventListener('click', function () {
-                const sidebar = document.getElementById('sidebar');
-                const content = document.getElementById('content');
-                sidebar.classList.toggle('collapsed');
-                content.classList.toggle('expanded');
-            });
-        </script>
+     </div>      
+            <!--Footer-->
+            <footer id="footerClass" class="text-body-secondary py-3">
+                <div class="container">
+                    <p class="float-end mb-1">
+                        <a href="#">Back to top</a>
+                    </p>
+                    <p class="mb-1">Not affliliated with Purdue University.</p>
+                </div>
+            </footer>
+            <!--Bootstrap components link-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                //Javascript
+                document.getElementById('toggleSidebarBtn').addEventListener('click', function () {
+                    const sidebar = document.getElementById('sidebar');
+                    const content = document.getElementById('content');
+                    sidebar.classList.toggle('collapsed');
+                    content.classList.toggle('expanded');
+                });
+            </script>
 </body>
 
 </html>
