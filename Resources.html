@@ -9,14 +9,34 @@
     <link href="/css/importantOne.css" rel="stylesheet" type="text/css" />
     <link href="/css/master.css" rel="stylesheet" type="text/css" />
     <style>
-        .col:hover {
+        #sideSectionCol1:hover,
+        #sideSectionCol2:hover,
+        #sideSectionCol3:hover,
+        #sideSectionCol4:hover,
+        #sideSectionCol5:hover, 
+        #bottomSectionCol1:hover, 
+        #bottomSectionCol2:hover, 
+        #bottomSectionCol3:hover, #bottomSectionCol4:hover, #tab2card1:hover, #tab2card2:hover, #tab2card3:hover{
             color: #FFCF40;
-            transition: color 0.3s ease;
+           
+            transition: color 0.2s ease;
             transform: scale(1.05);
         }
+        #appsCol1:hover, #appsCol2:hover, #appsCol3:hover, #appsCol4:hover, #appsCol5:hover, #appsCol6:hover{
+           transform: scale(1.05);
+        }
+
+        #resourceLink1:hover, #resourceLink2:hover,#resourceLink3:hover, #resourceLink4:hover, #resourceLink5:hover{
+            color: #FFCF40;
+        }
+        
+        #resourceLink1, #resourceLink2, #resourceLink3, #resourceLink4, #resourceLink5{
+        color: black;
+        }
+
     </style>
-    <title>Resources new-to-purdue</title>
 </head>
+<title>Resources</title>
 <!--HTML-->
 
 <body>
@@ -43,15 +63,15 @@
                 <div class="navbar-nav ms-auto m-0">
                     <a id="PurduePrepon" class="nav-item nav-link active border-start border-lightfont-monospace px-5"
                         href="/PurduePrep.html">Purdue Prep <!--<span class="sr-only">(current)</span>--></a>
-                    <a id="moveInButton" class="nav-item nav-link border-start border-light font-monospace px-5"
+                    <a id="moveInButton" class="nav-item nav-link active border-start border-light font-monospace px-5"
                         href="/MoveIn.html">Move In</a>
-                    <a id="firstWeekButton" class="nav-item nav-link border-start border-light font-monospace px-5"
+                    <a id="firstWeekButton" class="nav-item nav-link active border-start border-light font-monospace px-5"
                         href="/FirstWeek.html">1st Week</a>
-                    <a id="settlingInButton" class="nav-item nav-link border-start border-light font-monospace px-5"
+                    <a id="settlingInButton" class="nav-item nav-link active border-start border-light font-monospace px-5"
                         href="/SettlingIn.html">Settling In</a>
-                    <a id="resourcesButton" class="nav-item nav-link border-start border-light font-monospace px-5"
+                    <a id="resourcesButton" class="nav-item nav-link active border-start border-light font-monospace px-5"
                         href="/Resources.html">Resources</a>
-                    <a id="tipsButton" class="nav-item nav-link border-start border-light font-monospace px-5"
+                    <a id="tipsButton" class="nav-item nav-link active border-start border-light font-monospace px-5"
                         href="/Tips.html">Tips</a>
                 </div>
             </div>
@@ -68,16 +88,16 @@
         </div>
         <ul class="nav nav-tabs bg-black sticky-top" id="productivityTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
-                    role="tab" aria-controls="tab1" aria-selected="true">Tab 1</button>
+                <button class="nav-link active text-decoration-none text-warning" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+                    role="tab" aria-controls="tab1" aria-selected="true">Academic & Career</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
-                    role="tab" aria-controls="tab2" aria-selected="false">Tab 2</button>
+                <button class="nav-link text-decoration-none text-warning" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                    role="tab" aria-controls="tab2" aria-selected="false">Recreation</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
-                    role="tab" aria-controls="tab3" aria-selected="false">Tab 3</button>
+                <button class="nav-link text-decoration-none text-warning" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                    role="tab" aria-controls="tab3" aria-selected="false">Apps</button>
             </li>
         </ul>
         <div class="tab-content">
@@ -86,8 +106,8 @@
                 <!--(START TAB1)-->
                 <div class="container-l border-bottom border-light bg-dark m-0">
                     <div class="jumbotron text-center bg-black py-4 mb-0 text-warning rounded-top">
-                        <h1>Essentials</h1>
-                        <p>text</p>
+                        <h1>Academic & Career</h1>
+                        <p>The resources you need on your journey to advancing your academics and finding a career. </p>
                     </div>
                     <div class="row">
                         <!-- Carousel -->
@@ -107,42 +127,42 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="https://placehold.it/800x400?text=IMAGE" class="d-block w-100"
+                                        <img src="img/AcademicSuccessCenter2.png" class="d-block w-100"
                                             alt="Slide 1">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Text</h3>
+                                            <h3>Academic Success Center </h3>
                                             <p>1</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="https://placehold.it/800x400?text=Another Image Maybe"
+                                        <img src="/img/academicAdvising2.png"
                                             class="d-block w-100" alt="Slide 2">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Text</h3>
+                                            <h3>Academic Advising</h3>
                                             <p>2</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="https://placehold.it/800x400?text=New Slide 1" class="d-block w-100"
+                                        <img src="/img/supplementalInstruction2.png" class="d-block w-100"
                                             alt="Slide 3">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>New Slide 1</h3>
+                                            <h3>Supplemental Instruction</h3>
                                             <p>3</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="https://placehold.it/800x400?text=New Slide 2" class="d-block w-100"
+                                        <img src="/img/writingLab2.png" class="d-block w-100"
                                             alt="Slide 4">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>New Slide 2</h3>
+                                            <h3>Writing Lab</h3>
                                             <p>4</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="https://placehold.it/800x400?text=New Slide 3" class="d-block w-100"
+                                        <img src="/img/tutors2.png" class="d-block w-100"
                                             alt="Slide 5">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>New Slide 3</h3>
+                                            <h3>Tutors</h3>
                                             <p>5</p>
                                         </div>
                                     </div>
@@ -162,21 +182,35 @@
 
                         <!-- Sidebar -->
                         <div class="col-lg-4">
-                            <div id="sideSectionCol1" class="bg-secondary border border-warning p-3 mb-3 rounded">
-                                <p>Section</p>
+                            <div id="sideSectionCol1" class="bg-secondary border border-warning p-3 pt-4 text-center h4 mb-3 rounded text-decoration-none">
+                                
+                                <a href="https://www.purdue.edu/asc/" style=text-decoration:none; target="blank" id="resourceLink1">
+                                    <p>1. Academic Success Center</p>
+                                </a>
                             </div>
-                            <div id="sideSectionCol2" class="bg-secondary border border-warning p-3 mb-3 rounded">
-                                <p>Section</p>
+                            <div id="sideSectionCol2" class="bg-secondary border border-warning p-3 pt-4 text-center h4 mb-3 rounded text-decoration-none">
+                                
+                                <a href="https://www.purdue.edu/preprofessional/" style=text-decoration:none; target="blank" id="resourceLink2">
+                                    <p>2. Academic Advisors</p>
+                                </a>
                             </div>
-                            <div id="sideSectionCol3" class="bg-secondary border border-warning p-3 mb-3 rounded">
-                                <p>Section</p>
+                            <div id="sideSectionCol3" class="bg-secondary border border-warning p-3 pt-4 text-center h4 mb-3 rounded text-decoration-none">
+                                
+                                <a href="https://www.purdue.edu/asc/si/index.html" style=text-decoration:none; target="blank" id="resourceLink3">
+                                    <p>3. Supplemental Instruction</p>
+                                </a>
                             </div>
-                            <div id="sideSectionCol4"
-                                class="bg-secondary border border-warning border-warning p-3 mb-3 rounded">
-                                <p>Section</p>
+                            <div id="sideSectionCol4" class="bg-secondary border border-warning p-3 pt-4 text-center h4 mb-3 rounded text-decoration-none">
+                                
+                                <a href="https://owl.purdue.edu/" style=text-decoration:none; target="blank" id="resourceLink4">
+                                    <p>4. Writing Lab</p>
+                                </a>
                             </div>
-                            <div id="sideSectionCol5" class="bg-secondary border border-warning p-3 mb-3 rounded">
-                                <p>Section</p>
+                            <div id="sideSectionCol5" class="bg-secondary border border-warning p-3 pt-4 text-center h4 mb-3 rounded text-decoration-none">
+                                
+                                <a href="https://www.purdue.edu/asc/resources/tutoring.html" style=text-decoration:none; target="blank" id="resourceLink5">
+                                    <p>5. Tutors</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -184,67 +218,72 @@
                 </div>
 
                 <!-- What We Do Section -->
-                <div class="container text-center">
-                    <h3 class="text-light">Title</h3>
+                <div class="container text-center mt-4">
+                    <h3 class="text-light">Career</h3>
                     <br>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-3 bg-black">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-fluid rounded"
-                                alt="Current Project">
-                            <p>Text</p>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3 bg-warning">
-                            <a href="/FirstWeek.html"><img src="https://placehold.it/150x80?text=IMAGE" id="tab1Image1"
-                                    class="img-fluid rounded" alt="Project 2" href="/FirstWeek.html"></a>
-                            <p>Text</p>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <a href ="https://www.cco.purdue.edu/" ><img src="/img/PurdueCCO1.jpg" id= "tab1ccoImage" class="img-fluid rounded" alt="Project 2" ></a>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="bg-light p-3 rounded">
-                                <p>Some text...</p>
-                            </div>
-                            <div class="bg-light p-3 rounded mt-2">
-                                <p>Some text...</p>
-                            </div>
+                            <a href ="https://www.purdueglobal.edu/academic-support/" ><img src="/img/purdueGlobal2.jpg" id= "tab1academicsupportImage" class="img-fluid rounded" alt="Project 2"></a>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="bg-light p-3 rounded">
-                                <p>Some text...</p>
+                            <div id="bottomSectionCol1" class="bg-secondary rounded border border-warning p-4">
+                                <a href="https://www.purdueglobal.edu/academic-support/career-services/" class="h4" style=text-decoration:none; target="blank" id="resourceLink5">
+                                    <p>Career Assessment</p>
+                                </a>
                             </div>
-                            <div class="bg-light p-3 rounded mt-2">
-                                <p>Some text...</p>
+                            <div id="bottomSectionCol2" class="bg-secondary p-4 rounded mt-2 border border-warning">
+                                <a href="https://www.onetonline.org/" class="h4"style=text-decoration:none; target="blank" id="resourceLink5">
+                                    <p>O-Net Online</p>
+                                </a>
                             </div>
                         </div>
+                        <div  class="col-lg-3 col-md-6 mb-3">
+                            <div id="bottomSectionCol3" class="bg-secondary p-4 rounded border border-warning">
+                                <a href="https://www.bls.gov/ooh/" class= "h4" style=text-decoration:none; target="blank" id="resourceLink5">
+                                    <p>Occupational Outlook</p>
+                                </a>
+                            </div>
+                            <div id="bottomSectionCol4" class="bg-secondary p-4 rounded mt-2 border border-warning">
+                                <a href="https://purdue.biginterview.com/" class= "h4"style=text-decoration:none; target="blank" id="resourceLink5">
+                                    <p>Big Interview</p>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                     <hr>
                 </div>
 
                 <!-- Our Partners Section -->
                 <div class="container text-center">
-                    <h3 class="text-light">Section</h3>
+                    <h3 class="text-light">Essential Websites</h3>
                     <br>
                     <div class="row text-light">
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 1">
-                            <p>Section 1</p>
+                            <a href ="https://www.linkedin.com/" ><img src="/img/LinkedIn1.png" id= "tab1LinkedInImage" class="img-fluid rounded" alt="Project 2"></a>
+                            <p>LinkedIn</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 2">
-                            <p>Section 2</p>
+                            <a href ="https://www.indeed.com/" ><img src="/img/indeedImage.png" id= "tab1IndeedImage" class="img-fluid rounded" alt="Project 2"></a>
+                            <p>Indeed</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 3">
+                            <a href ="https://scholar.google.com/" ><img src="/img/googleScholar.webp" id= "tab1GoogleScholarImage" class="img-fluid rounded" alt="Project 2"></a>
                             <p>Section 3</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 4">
+                            <a href ="https://app.grammarly.com/" ><img src="/img/grammarlyImage.jpg" id= "tab1GrammarlyImage" class="img-fluid rounded" alt="Project 2"></a>
                             <p>Section 4</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 5">
+                            <a href ="https://quizlet.com/" ><img src="/img/quizletImage.png" id= "tab1QuizletImage" class="img-fluid rounded" alt="Project 2"></a>
                             <p>Section 5</p>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 mb-3">
-                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="Partner 6">
+                            <a href ="https://www.coursera.org/" ><img src="/img/courseraImage.png" id= "tab1CourseraImage" class="img-fluid rounded" alt="Project 2"></a>
                             <p>Section 6</p>
                         </div>
                     </div>
@@ -262,7 +301,7 @@
                 <div class="container-l border-bottom border-light bg-dark m-0 rounded-top">
                     <div class="jumbotron text-center bg-black py-4 mb-0 text-warning">
                         <h1>Recreation</h1>
-                        <p>text</p>
+                        <p>Use these resources to find fun activities at Purdue!</p>
                     </div>
                     <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
                         <!-- Indicators -->
@@ -276,19 +315,19 @@
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://placehold.it/1200x400?text=IMAGE" class="d-block w-100"
+                                <img src="/img/corecImage2.png" class="d-block w-100"
                                     alt="First slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h3>text</h3>
-                                    <p>text</p>
+                                    <h3>Corec</h3>
+                                    <p>1</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="https://placehold.it/1200x400?text=Another Image Maybe" class="d-block w-100"
+                                <img src="/img/recreationImage2.png" class="d-block w-100"
                                     alt="Second slide">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h3>text</h3>
-                                    <p>text</p>
+                                    <h3>Clubs</h3>
+                                    <p>2</p>
                                 </div>
                             </div>
                         </div>
@@ -309,26 +348,44 @@
                     <div class="container text-center my-5">
                         <h3>Section</h3><br>
                         <div class="row">
-                            <div class="col-sm-4 mb-3">
-                                <img src="https://placehold.it/150x80?text=IMAGE" class="img-fluid"
-                                    alt="Current Project">
-                                <p>text</p>
+                            <div class="col-lg-2 col-md-4 col-6 mb-3">
+                                <a href ="https://www.purdue.edu/sao/resources/CORQ%20App.html" ><img src="/img/corqApp.png" id= "tab2CorqImage" class="img-fluid rounded" alt="Project 2"></a>
+                            <p>Corq</p>
                             </div>
-                            <div class="col-sm-4 mb-3">
-                                <img src="https://placehold.it/150x80?text=IMAGE" class="img-fluid" alt="Project 2">
-                                <p>text</p>
+                            <div class="col-lg-2 col-md-4 col-6 mb-3">
+                                <a href ="/img/corecAppImage.png" ><img src="/img/corecAppImage.png" id= "tab2CorecAppImage" class="img-fluid rounded" alt="Project 2"></a>
+                                <p>Corec App Image</p>
                             </div>
                             <div class="col-sm-4">
-                                <div class="card mb-3">
+                                <div id = "tab2card1" class="card mb-3 bg-secondary border-warning">
                                     <div class="card-body">
-                                        <p class="card-text">Some text...</p>
+                                        <a href="https://events.purdue.edu/" class="h5 p-0 m-0" style=text-decoration:none; target="blank" id="resourceLink5">
+                                            Events Calendar
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div id = "tab2card2"class="card mb-3 bg-secondary h5 border-warning">
                                     <div class="card-body">
-                                        <p class="card-text">Some text...</p>
+                                        <a href="https://www.union.purdue.edu/" class="h5 p-0 m-0" style=text-decoration:none; target="blank" id="resourceLink5">
+                                            Purdue Memorial Union (PMU)
+                                        </a>
                                     </div>
                                 </div>
+                                <div id = "tab2card3" class="card bg-secondary h5 border-warning">
+                                    <div class="card-body">
+                                        <a href="Student Activities and Organizations" class="h5 p-0 m-0" style=text-decoration:none; target="blank" id="resourceLink5">
+                                            Career Assessment
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 mb-3">
+                                <a href ="https://service.purdue.edu/TDClient/32/Purdue/KB/ArticleDet?ID=138" ><img src="/img/starshipImage.png" id= "tab2StarshipImage" class="img-fluid rounded" alt="Project 2"></a>
+                            <p>Corq</p>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 mb-3">
+                                <a href ="https://www.in.gov/citybuslafayette/how-to-ride/mycitybus-app/" ><img src="/img/citybusImage.png" id= "tab2CorecAppImage" class="img-fluid rounded" alt="Project 2"></a>
+                                <p>Corec App Image</p>
                             </div>
                         </div>
                     </div>
@@ -342,75 +399,71 @@
 
             <!--TAB 3-->
             <div class="tab-pane fade p-3" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-                <div class="container-l border-bottom border-light bg-dark m-0">
-                    <div class="jumbotron text-center bg-black text-warning py-5 mb-4 rounded-top">
-                        <h1>Section</h1>
-                        <p>text</p>
+                <div class="container-l border-bottom border-light bg-dark m-0 rounded-top">
+                    <div class="jumbotron text-center bg-black text-warning py-4 mb-4 m-0 rounded-top">
+                        <h1>Apps</h1>
+                        <p>Essential Purdue apps for everyday use. </p>
                     </div>
                     <div class="row mx-3">
                         <div class="col-md-2 bg-black"></div>
                         <div class="col-md-8">
                             <div class="container my-4">
                                 <div class="row">
-                                    <div class="col-md-4 mb-4">
+                                    <div id = "appsCol1" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://apps.brightspace.com/pulse/launch" ><img src="/img/pulseAppImage.png" id= "tab2CorqImage" class="img-fluid rounded" alt="Project 2"></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">Desc</p>
+                                                <h5 class="card-title">Pulse</h5>
+                                                <p class="card-text">The hub for all of your Brightspace assignents- all on your phone!</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-4">
+                                    <div id = "appsCol2" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://dining.purdue.edu/menus/" ><img src="/img/purdueDiningAppImage.png" id= "tab2DiningImage" class="img-fluid rounded" alt="Project 2"></a>
+                                               
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">Desc</p>
+                                                <h5 class="card-title">Purdue Menus</h5>
+                                                <p class="card-text">Find the menus for Purdue's dining locations here.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-4">
+                                    <div  id = "appsCol3" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://www.purdue.edu/studentsuccess/purdueguide.html" ><img src="/img/purdueGuideAppImage.png" id= "tab2PurdueGuideImage" class="img-fluid rounded" alt="Project 2"></a>
+                                                
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">Desc</p>
+                                                <h5 class="card-title">Purdue Guide</h5>
+                                                <p class="card-text">A useful app for Boiler Gold/Cold Rush!</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4 mb-4">
+                                    <div id = "appsCol4" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://eacct-purdue-sp.transactcampus.com/purdueeaccounts/AnonymousHome.aspx"><img src="/img/eAccountsAppImage.png" id= "tab2CorqImage" class="img-fluid rounded" alt="Project 2"></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">Desc</p>
+                                                <h5 class="card-title">eAccounts</h5>
+                                                <p class="card-text">Keep your Purdue ID here and see meal plan information.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-4">
+                                    <div id = "appsCol5" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app" ><img src="/img/duoMobileImage.png" id= "tab2CorqImage" class="img-fluid rounded" alt="Project 2"></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">Desc</p>
+                                                <h5 class="card-title">Duo Mobile</h5>
+                                                <p class="card-text">For two-factor-authentication, use the Duo app on your device.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-4">
+                                    <div id = "appsCol6" class="col-md-4 mb-4">
                                         <div class="card">
-                                            <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top"
-                                                alt="Black Friday Deal">
+                                            <a href ="https://www.veoride.com/home-sweet-veo-home-purdue-university/" ><img src="/img/veoAppImage.png" id= "tab2CorqImage" class="img-fluid rounded" alt="Project 2"></a>
                                             <div class="card-body">
-                                                <h5 class="card-title">Resource</h5>
-                                                <p class="card-text">desc</p>
+                                                <h5 class="card-title">Veo</h5>
+                                                <p class="card-text">Late to class? Take a Veo bike or scooter!</p>
                                             </div>
                                         </div>
                                     </div>
