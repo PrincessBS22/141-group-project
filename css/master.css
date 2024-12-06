@@ -145,4 +145,7 @@ body {
 }
 
 
-/* ...other consolidated styles... */
+/* ...Form styling... */
+#form-group:required{
+font-weight: bolder;
+}
